@@ -1,0 +1,74 @@
+.todo-list li{
+    margin: 1rem auto;
+  }
+
+.todo-item, .editing-form{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    height: 4rem;
+}
+
+.todo-item{
+    border: 2px solid #00f;
+}
+
+.todo-item .text{
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+}
+
+.todo-item input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.todo-item .actions,
+.editing-form .actions{
+    height: 100%;
+}
+
+.todo-item .actions button,
+.editing-form .actions button {
+    width: 4.5rem;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.todo-item .actions button{
+    border-left: 3px solid #00f;
+    background-color: rgb(104, 104, 255);
+    color: #fff;
+}
+
+.editing-form{
+    border: 2px solid rgb(128, 0, 255);
+}
+
+.editing-form input[type="text"],
+.editing-form input[type="text"]:focus{
+    padding: 0px 5px;
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.editing-form .actions .-cancel{
+    border-left: 3px solid #f00;
+    background-color: rgb(255, 128, 128);
+    color: #fff;
+}
+
+
+/* .editing-form .actions .-save{
+    border-left: 3px solid rgb(0,128,0);
+    background-color: rgb(255, 255, 255);
+    color: #000;
+} */
+.editing-form .actions .-save{
+    border-left: 2px solid rgb(128, 0, 255);
+    background-color: rgb(189, 124, 255);
+    color: #fff;
+}
